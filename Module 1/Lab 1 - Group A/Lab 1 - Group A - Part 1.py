@@ -1,4 +1,4 @@
-# Lab 1 - Group A - Part 1
+# Lab 1 - Group A - Part 1 (beta) - Keith Wangler
 
 
 # define a function to handle cost calculation logic
