@@ -7,6 +7,7 @@
 This program calculates the shipping cost based on the package’s Weight (in kg) and the Destination Zone (A, B, or C). The system must apply base costs and surcharges using the following tiered structure:
 
 | Zone | Weight <= 5kg | 5 < Weight <= 10kg | Weight > 10kg |
+| ---- | ------------- | ------------------ | ------------- |
 | A | $10.00 | $15.00 | $20.00 |
 | B | $15.00 | $20.00 | $25.00 |
 | C | $20.00 | $25.00 | $30.00 |
