@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lab 1, Group A | CS 212 - Artificial Intelligence Programming 1</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Lab 1, Group A" />
+<meta name="author" content="Brian Bird" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Group A assignment to translate and write Python apps" />
+<meta property="og:description" content="Group A assignment to translate and write Python apps" />
+<link rel="canonical" href="https://lcc-cit.github.io/CS212-CourseMaterials/Labs/Lab01-Python/GroupA/CS212_Lab01_Instructions_GroupA.html" />
+<meta property="og:url" content="https://lcc-cit.github.io/CS212-CourseMaterials/Labs/Lab01-Python/GroupA/CS212_Lab01_Instructions_GroupA.html" />
+<meta property="og:site_name" content="CS 212 - Artificial Intelligence Programming 1" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lab 1, Group A" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Brian Bird"},"description":"Group A assignment to translate and write Python apps","headline":"Lab 1, Group A","url":"https://lcc-cit.github.io/CS212-CourseMaterials/Labs/Lab01-Python/GroupA/CS212_Lab01_Instructions_GroupA.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/CS212-CourseMaterials/assets/css/style.css?v=78209ca0195a339777a699c1eee8c8b9ce69cb54">
+    <style>
+.toc-nav {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  display: inline-block;
+  min-width: 280px;
+  max-width: 100%;
+}
+.toc-nav ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.toc-nav li {
+  margin: 0.35rem 0;
+}
+.toc-nav li.toc-h3 {
+  margin-left: 1.25rem;
+  list-style-type: circle;
+}
+.toc-nav li.toc-h4 {
+  margin-left: 2.5rem;
+  list-style-type: square;
+}
+.toc-nav a {
+  text-decoration: none;
+  color: #0969da;
+}
+.toc-nav a:hover {
+  text-decoration: underline;
+}
+/* External link indicator icon */
+a[href^="http"]:not([href*="lcc-cit.github.io"]):not(:has(img))::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+  vertical-align: -0.05em;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+/* Download link indicator icon */
+a[download]::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+  vertical-align: -0.05em;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/%3E%3Cpolyline points='7 10 12 15 17 10'/%3E%3Cline x1='12' y1='15' x2='12' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/%3E%3Cpolyline points='7 10 12 15 17 10'/%3E%3Cline x1='12' y1='15' x2='12' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const candidates = document.querySelectorAll("p, div");
+  let tocTarget = null;
+  for (const el of candidates) {
+    if (el.textContent.trim() === "[TOC]") {
+      tocTarget = el;
+      break;
+    }
+  }
+
+  if (!tocTarget) return;
+
+  const contentArea = document.querySelector(".markdown-body") || document.body;
+  const headings = contentArea.querySelectorAll("h2, h3, h4");
+
+  if (headings.length === 0) {
+    tocTarget.remove();
+    return;
+  }
+
+  const nav = document.createElement("nav");
+  nav.className = "toc-nav";
+  nav.setAttribute("aria-label", "Table of Contents");
+
+  const ul = document.createElement("ul");
+
+  headings.forEach(function (h) {
+    const text = h.textContent.trim();
+    if (text.toLowerCase() === "contents" || text.toLowerCase() === "table of contents") {
+      return;
+    }
+
+    if (!h.id) {
+      h.id = text.toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+    }
+
+    const li = document.createElement("li");
+    li.className = "toc-" + h.tagName.toLowerCase();
+
+    const a = document.createElement("a");
+    a.href = "#" + h.id;
+    a.textContent = text;
+
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  nav.appendChild(ul);
+  tocTarget.replaceWith(nav);
+});
+</script>
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://lcc-cit.github.io/CS212-CourseMaterials/">CS 212 - Artificial Intelligence Programming 1</a></h1>
+      
+
+      <h1>Lab 1, Python and AI Warm-Up</h1>
+
+<h2>Group A</h2>
+
+<p><strong>CS 212, AI Programming 1</strong></p>
+
+<h3 id="1-translate-a-program-into-python">1. Translate a Program into Python</h3>
+
+<h4 id="shipping-cost-calculator">Shipping Cost Calculator</h4>
+
+<p>This program calculates the shipping cost based on the package’s <em>Weight (in kg)</em> and the <em>Destination Zone</em> (A, B, or C). The system must apply base costs and surcharges using the following tiered structure:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Zone</th>
+      <th>Weight ≤5 kg</th>
+      <th>5&lt; Weight ≤10 kg</th>
+      <th>Weight &gt;10 kg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A</strong></td>
+      <td>$10.00</td>
+      <td>$15.00</td>
+      <td>$20.00</td>
+    </tr>
+    <tr>
+      <td><strong>B</strong></td>
+      <td>$15.00</td>
+      <td>$20.00</td>
+      <td>$25.00</td>
+    </tr>
+    <tr>
+      <td><strong>C</strong></td>
+      <td>$20.00</td>
+      <td>$25.00</td>
+      <td>$30.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Translate the program from either <a href="shippingCalculator.js" download="">JavaScript</a> or <a href="shippingCalculator.cs" download="">C#</a> into Python</p>
+
+<h3 id="2-write-a-python-program">2. Write a Python Program</h3>
+
+<h4 id="financial-product-recommendation-system">Financial Product Recommendation System</h4>
+
+<p>Create a simplified expert system that recommends a suitable investment product based on two factors provided by the user: <em>Investment Horizon</em> (Short-Term: &lt;5 years, or Long-Term: ≥5 years) and <em>Risk Tolerance</em> (Low or High).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Horizon</th>
+      <th>Risk Tolerance</th>
+      <th>Recommended Product</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short-Term</td>
+      <td>Low</td>
+      <td>High-Yield Savings Account</td>
+    </tr>
+    <tr>
+      <td>Short-Term</td>
+      <td>High</td>
+      <td>Short-Term Corporate Bonds</td>
+    </tr>
+    <tr>
+      <td>Long-Term</td>
+      <td>Low</td>
+      <td>Government Bonds/Index Fund</td>
+    </tr>
+    <tr>
+      <td>Long-Term</td>
+      <td>High</td>
+      <td>Diversified Stock Portfolio</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="submitting-your-lab-work-on-canvas">Submitting your lab work on Canvas</h2>
+
+<h3 id="beta-version">Beta Version</h3>
+
+<ul>
+  <li>Post the beta version of both programs to your team channel in Discord.</li>
+</ul>
+
+<h3 id="code-review">Code Review</h3>
+
+<ul>
+  <li>Review one of your lab partners’ code and post the review in your team channel on Discord.</li>
+  <li>Submit a copy of the code review <u>you did</u> to the code review assignment on Canvas.</li>
+</ul>
+
+<h3 id="production-version">Production Version</h3>
+
+<p>Based on the code review and helpful advice from your lab partners, you may revise your code. On the code review from your lab partner, complete the “Prod.” column to show what you revised. Upload the following to the <em>Lab Production Version</em> assignment on Canvas:</p>
+
+<ol>
+  <li>The two Python (.py) files</li>
+  <li>The code review <u>from your lab partner</u> with the “Prod.” column filled out by you.</li>
+</ol>
+
+<p>This will be a total of 3 files.</p>
+
+<h3 id="grading-criteria">Grading Criteria</h3>
+
+<p>The main focus of grading will be on correct coding and problem solving skills.</p>
+
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/LCC-CIT/CS212-CourseMaterials/edit/main/docs/Labs/Lab01-Python/GroupA/CS212_Lab01_Instructions_GroupA.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
