@@ -1,6 +1,6 @@
-
-
 # Lab 1 - Group A - Part 1
+
+
 # define a function to handle cost calculation logic
 def calculate_shipping_cost(is_valid, weight_kg, zone):
     z = zone.capitalize()
@@ -33,13 +33,14 @@ def calculate_shipping_cost(is_valid, weight_kg, zone):
     # output results if is_valid returns True
     if is_valid:
         print(f"Package Details: {weight_kg}kg to Zone {z}")
-        print(f"Calculated Shipping Cost: {cost:.2f}")
+        print(f"Calculated Shipping Cost: ${cost:.2f}")
 
     print("----------------------------")
 
+
 # first example run
 # declare variables
-weight_kg= 7.5
+weight_kg = 7.5
 zone = "A"
 cost = 0.0
 is_valid = True
@@ -49,7 +50,7 @@ calculate_shipping_cost(is_valid, weight_kg, zone)
 
 # second example run
 # declare variables
-weight_kg= 12.0
+weight_kg = 12.0
 zone = "C"
 cost = 0.0
 is_valid = True
