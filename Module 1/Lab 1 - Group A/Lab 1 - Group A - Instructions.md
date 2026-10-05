@@ -1,7 +1,5 @@
 # Lab 1, Python and AI Warm-Up
----
 ## Group A
----
 #### CS212, AI Programming 1
 ### 1. Translate a Program into Python
 #### Shipping Cost Calculator
