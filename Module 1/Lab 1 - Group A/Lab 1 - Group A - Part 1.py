@@ -38,22 +38,23 @@ def calculate_shipping_cost(is_valid, weight_kg, zone):
     print("----------------------------")
 
 
-# first example run
-# declare variables
-weight_kg = 7.5
-zone = "A"
-cost = 0.0
-is_valid = True
+if __name__ == '__main__':
+    # first example run
+    # declare variables
+    weight_kg = 7.5
+    zone = "A"
+    cost = 0.0
+    is_valid = True
 
-print("\n--- Shipping Cost Check (Procedural) ---")
-calculate_shipping_cost(is_valid, weight_kg, zone)
+    print("\n--- Shipping Cost Check (Procedural) ---")
+    calculate_shipping_cost(is_valid, weight_kg, zone)
 
-# second example run
-# declare variables
-weight_kg = 12.0
-zone = "C"
-cost = 0.0
-is_valid = True
+    # second example run
+    # declare variables
+    weight_kg = 12.0
+    zone = "C"
+    cost = 0.0
+    is_valid = True
 
-print("\n--- Shipping Cost Check (Second Run) ---")
-calculate_shipping_cost(is_valid, weight_kg, zone)
+    print("\n--- Shipping Cost Check (Second Run) ---")
+    calculate_shipping_cost(is_valid, weight_kg, zone)
