@@ -1,0 +1,19 @@
+[project]
+name = "module-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "keethums", email = "keethums@proton.me" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "z3-solver>=5.1.0.0",
+]
+
+[project.scripts]
+module-2 = "module_2:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
