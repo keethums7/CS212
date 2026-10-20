@@ -24,7 +24,7 @@ wheels = [
 ]
 
 [[package]]
-name = "lab03"
+name = "lab03-part1"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
