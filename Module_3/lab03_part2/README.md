@@ -13,6 +13,7 @@ After that run the main.py and point to the `paragraphs` directory:
 
 Altogether:
 ```
-uv sync \
+uv sync && \
+source .env/bin/activate && \
 python main.py data/languages/paragraphs/
 ```
