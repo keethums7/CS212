@@ -1,0 +1,1 @@
+Obtaining the full contents of Wikipedia for reuse presents challenges, since direct cloning via a web crawler is discouraged.[392] Wikipedia publishes "dumps" of its contents, but these are text-only; as of 2023,[update] there is no dump available of Wikipedia's images.[393] Wikimedia Enterprise is a for-profit solution to this.[394]
