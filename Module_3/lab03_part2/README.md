@@ -14,7 +14,11 @@ After that run the main.py and point to the `paragraphs` directory:
 
 Altogether:
 ```
-cd lab03_part2 // if necessary
+// if necessary
+cd lab03_part2
+```
+```
+// then
 uv sync && \
 source .env/bin/activate && \
 python main.py data/languages/paragraphs/
