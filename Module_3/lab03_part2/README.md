@@ -13,12 +13,13 @@ After that run the main.py and point to the `paragraphs` directory:
 `main.py data/languages/paragraphs`
 
 Altogether:
+if necessary:
 ```
-// if necessary
 cd lab03_part2
 ```
+
+then:
 ```
-// then
 uv sync && \
 source .env/bin/activate && \
 python main.py data/languages/paragraphs/
