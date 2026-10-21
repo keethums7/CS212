@@ -10,10 +10,9 @@ Or whichever shell script corresponds to your system, I use the fish shell so mi
 `source .venv/bin/activate.fish`
 
 After that run the main.py and point to the `paragraphs` directory:
-`main.py data/languages/paragraphs`
+`main.py data/languages/paragraphs`  
 
-Altogether:  
-
+### Linux (adjust for your OS as needed)
 if necessary:
 ```
 cd lab03_part2

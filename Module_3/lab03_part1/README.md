@@ -3,6 +3,7 @@
 After downloading, be sure to `cd` into the `lab03_part1` directory first, then
 use `uv sync`, and run `python main.py`, e.g.:
 
+### On Linux (adjust for your own OS as needed)
 if necessary:
 ```
 cd lab03_part1
