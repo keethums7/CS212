@@ -12,7 +12,8 @@ Or whichever shell script corresponds to your system, I use the fish shell so mi
 After that run the main.py and point to the `paragraphs` directory:
 `main.py data/languages/paragraphs`
 
-Altogether:
+Altogether:  
+
 if necessary:
 ```
 cd lab03_part2
